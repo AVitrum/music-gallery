@@ -1,0 +1,64 @@
+{
+  "artists": [
+    {
+      "id": 1,
+      "title": "Evans Blue",
+      "img": "assets/images/artist_img/evans_blue.jpeg",
+      "description": "A Canadian rock band",
+      "link": "https://music.youtube.com/channel/UCAUzFgktAawSI_eNrHXdwDg?si=D25VxHpccg4FqZFQ",
+      "musicList": [
+        {
+          "title": "Erase My Scars",
+          "img": "assets/images/music_img/erase_my_scars.jpeg",
+          "description": "Song by Evans Blue",
+          "link": "https://music.youtube.com/watch?v=H5JE2poUwQM&si=6zeZJgULofpuoYQ0",
+          "year": 2009
+        },
+        {
+          "title": "This Time It's Different",
+          "img": "assets/images/music_img/this_time.jpeg",
+          "description": "Song by Evans Blue",
+          "link": "https://www.youtube.com/watch?v=l0ULL3cFEqo",
+          "year": 2012
+        },
+        {
+          "title": "Beyond The Stars",
+          "img": "assets/images/music_img/this_time.jpeg",
+          "description": "Song by Evans Blue",
+          "link": "https://music.youtube.com/watch?v=YYKYZ9kKWJQ&si=YjTDY7W4R9L7CBJ1",
+          "year": 2012
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Skillet",
+      "img": "assets/images/artist_img/skillet.jpg",
+      "description": "An American rock band",
+      "link": "https://music.youtube.com/channel/UCAUzFgktAawSI_eNrHXdwDg?si=D25VxHpccg4FqZFQ",
+      "musicList": [
+        {
+          "title": "Monster",
+          "img": "assets/images/music_img/monster.jpeg",
+          "description": "Song by Skillet",
+          "link": "https://music.youtube.com/watch?v=Bn96ZZpHfLo&si=YDti5S9d2fKIpQtY",
+          "year": 2009
+        },
+        {
+          "title": "Hero",
+          "img": "assets/images/music_img/hero.png",
+          "description": "Song by Skillet",
+          "link": "https://music.youtube.com/watch?v=EDNZ2zubuKg&si=TbG8OxMpKLXkwOqU",
+          "year": 2009
+        },
+        {
+          "title": "The Resistance",
+          "img": "assets/images/music_img/the_resistance.jpeg",
+          "description": "Song by Skillet",
+          "link": "https://music.youtube.com/watch?v=cGvJbijeYSM&si=jgJ0cQnA6nLlHJiN",
+          "year": 2016
+        }
+      ]
+    }
+  ]
+}

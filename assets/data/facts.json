@@ -1,0 +1,14 @@
+{
+  "facts": [
+    {
+      "img": "assets/images/artist_img/evans_blue.jpeg",
+      "title": "Evans Blue",
+      "description": "Years of activity 2005-2016."
+    },
+    {
+      "img": "assets/images/artist_img/skillet.jpg",
+      "title": "Skillet",
+      "description": "Years of activity 1996–present."
+    }
+  ]
+}
