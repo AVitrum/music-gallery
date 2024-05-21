@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gallery_app/api/musicBackend.dart';
 import 'package:gallery_app/models/musicModel.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -54,19 +55,51 @@ class MusicDetailsPage extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: ElevatedButton(
-              onPressed: () {
-                if (music.link.isNotEmpty) {
-                  launch(music.link);
-                } else {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text('No link'),
-                    ),
-                  );
-                }
-              },
-              child: const Text('Listen'),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    if (music.link.isNotEmpty) {
+                      launch(music.link);
+                    } else {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          content: Text('No link'),
+                        ),
+                      );
+                    }
+                  },
+                  child: const Text('Listen'),
+                ),
+                StreamBuilder<List<String>>(
+                    stream: MusicBackend().favouriteMusics,
+                    builder: (context, snapshot) {
+                      if (!snapshot.hasData) {
+                        return SizedBox(
+                          width: 50,
+                          height: 50,
+                          child: Center(child: CircularProgressIndicator()),
+                        );
+                      }
+                      final favoritedMusics = snapshot.data;
+                      final isFavorited =
+                          favoritedMusics!.contains(music.title);
+                      return IconButton(
+                        onPressed: () {
+                          MusicBackend().setFavouritedMusic(
+                            title: music.title,
+                            favorited: !isFavorited,
+                          );
+                        },
+                        iconSize: 30,
+                        icon: Icon(isFavorited
+                            ? Icons.favorite
+                            : Icons.favorite_border),
+                        color: Colors.red,
+                      );
+                    }),
+              ],
             ),
           ),
         ],

@@ -82,43 +82,12 @@
 /Users/almashiandrey/.pub-cache/hosted/pub.dev/meta-1.11.0/lib/meta.dart
 /Users/almashiandrey/.pub-cache/hosted/pub.dev/meta-1.11.0/lib/meta_meta.dart
 /Users/almashiandrey/.pub-cache/hosted/pub.dev/path-1.9.0/LICENSE
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.8/LICENSE
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.8/lib/plugin_platform_interface.dart
 /Users/almashiandrey/.pub-cache/hosted/pub.dev/source_span-1.10.0/LICENSE
 /Users/almashiandrey/.pub-cache/hosted/pub.dev/stack_trace-1.11.1/LICENSE
 /Users/almashiandrey/.pub-cache/hosted/pub.dev/stream_channel-2.1.2/LICENSE
 /Users/almashiandrey/.pub-cache/hosted/pub.dev/string_scanner-1.2.0/LICENSE
 /Users/almashiandrey/.pub-cache/hosted/pub.dev/term_glyph-1.2.1/LICENSE
 /Users/almashiandrey/.pub-cache/hosted/pub.dev/test_api-0.6.1/LICENSE
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher-6.2.6/LICENSE
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher-6.2.6/lib/src/legacy_api.dart
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher-6.2.6/lib/src/type_conversion.dart
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher-6.2.6/lib/src/types.dart
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher-6.2.6/lib/src/url_launcher_string.dart
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher-6.2.6/lib/src/url_launcher_uri.dart
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher-6.2.6/lib/url_launcher.dart
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher-6.2.6/lib/url_launcher_string.dart
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher_android-6.3.1/LICENSE
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher_android-6.3.1/lib/src/messages.g.dart
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher_android-6.3.1/lib/url_launcher_android.dart
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher_ios-6.2.5/LICENSE
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher_ios-6.2.5/lib/src/messages.g.dart
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher_ios-6.2.5/lib/url_launcher_ios.dart
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher_linux-3.1.1/LICENSE
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher_linux-3.1.1/lib/url_launcher_linux.dart
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher_macos-3.1.0/LICENSE
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher_macos-3.1.0/lib/src/messages.g.dart
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher_macos-3.1.0/lib/url_launcher_macos.dart
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher_platform_interface-2.3.2/LICENSE
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher_platform_interface-2.3.2/lib/link.dart
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher_platform_interface-2.3.2/lib/method_channel_url_launcher.dart
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher_platform_interface-2.3.2/lib/src/types.dart
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher_platform_interface-2.3.2/lib/src/url_launcher_platform.dart
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher_platform_interface-2.3.2/lib/url_launcher_platform_interface.dart
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher_web-2.3.1/LICENSE
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher_windows-3.1.1/LICENSE
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher_windows-3.1.1/lib/src/messages.g.dart
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/url_launcher_windows-3.1.1/lib/url_launcher_windows.dart
 /Users/almashiandrey/.pub-cache/hosted/pub.dev/vector_math-2.1.4/LICENSE
 /Users/almashiandrey/.pub-cache/hosted/pub.dev/vector_math-2.1.4/lib/src/vector_math_64/aabb2.dart
 /Users/almashiandrey/.pub-cache/hosted/pub.dev/vector_math-2.1.4/lib/src/vector_math_64/aabb3.dart
@@ -146,35 +115,42 @@
 /Users/almashiandrey/.pub-cache/hosted/pub.dev/vector_math-2.1.4/lib/src/vector_math_64/vector4.dart
 /Users/almashiandrey/.pub-cache/hosted/pub.dev/vector_math-2.1.4/lib/vector_math_64.dart
 /Users/almashiandrey/.pub-cache/hosted/pub.dev/vm_service-13.0.0/LICENSE
-/Users/almashiandrey/.pub-cache/hosted/pub.dev/web-0.5.1/LICENSE
-/Users/almashiandrey/Developer/Main/music-gallery/DOES_NOT_EXIST_RERUN_FOR_WILDCARD967355453
-/Users/almashiandrey/Developer/Main/music-gallery/assets/data/artists.json
-/Users/almashiandrey/Developer/Main/music-gallery/assets/data/facts.json
-/Users/almashiandrey/Developer/Main/music-gallery/assets/images/artist_img/evans_blue.jpeg
-/Users/almashiandrey/Developer/Main/music-gallery/assets/images/artist_img/skillet.jpg
-/Users/almashiandrey/Developer/Main/music-gallery/assets/images/background_img/background.jpg
-/Users/almashiandrey/Developer/Main/music-gallery/assets/images/background_img/starset.jpeg
-/Users/almashiandrey/Developer/Main/music-gallery/assets/images/music_img/erase_my_scars.jpeg
-/Users/almashiandrey/Developer/Main/music-gallery/assets/images/music_img/hero.png
-/Users/almashiandrey/Developer/Main/music-gallery/assets/images/music_img/monster.jpeg
-/Users/almashiandrey/Developer/Main/music-gallery/assets/images/music_img/the_resistance.jpeg
-/Users/almashiandrey/Developer/Main/music-gallery/assets/images/music_img/this_time.jpeg
-/Users/almashiandrey/Developer/Main/music-gallery/lib/api/musicBackend.dart
-/Users/almashiandrey/Developer/Main/music-gallery/lib/main.dart
-/Users/almashiandrey/Developer/Main/music-gallery/lib/models/artistInfo.dart
-/Users/almashiandrey/Developer/Main/music-gallery/lib/models/fact.dart
-/Users/almashiandrey/Developer/Main/music-gallery/lib/models/musicModel.dart
-/Users/almashiandrey/Developer/Main/music-gallery/lib/theme.dart
-/Users/almashiandrey/Developer/Main/music-gallery/lib/views/components/artist_details_view.dart
-/Users/almashiandrey/Developer/Main/music-gallery/lib/views/components/gallery_view.dart
-/Users/almashiandrey/Developer/Main/music-gallery/lib/views/components/home_view.dart
-/Users/almashiandrey/Developer/Main/music-gallery/lib/views/components/music_details.dart
-/Users/almashiandrey/Developer/Main/music-gallery/lib/views/components/music_facts.dart
-/Users/almashiandrey/Developer/Main/music-gallery/lib/views/components/music_view.dart
-/Users/almashiandrey/Developer/Main/music-gallery/lib/views/facts.dart
-/Users/almashiandrey/Developer/Main/music-gallery/lib/views/home.dart
-/Users/almashiandrey/Developer/Main/music-gallery/lib/views/music.dart
-/Users/almashiandrey/Developer/Main/music-gallery/pubspec.yaml
+/Users/almashiandrey/Downloads/Gallery App part3/DOES_NOT_EXIST_RERUN_FOR_WILDCARD416996676
+/Users/almashiandrey/Downloads/Gallery App part3/assets/data/art.json
+/Users/almashiandrey/Downloads/Gallery App part3/assets/data/artists.json
+/Users/almashiandrey/Downloads/Gallery App part3/assets/data/gallery.json
+/Users/almashiandrey/Downloads/Gallery App part3/assets/images/art_img/dali/metamorphosis_of_narcissus.jpg
+/Users/almashiandrey/Downloads/Gallery App part3/assets/images/art_img/dali/persistence_of_memory.jpeg
+/Users/almashiandrey/Downloads/Gallery App part3/assets/images/art_img/davinci/Lady-Ermine.webp
+/Users/almashiandrey/Downloads/Gallery App part3/assets/images/art_img/davinci/Last-Supper.webp
+/Users/almashiandrey/Downloads/Gallery App part3/assets/images/art_img/monet/San-Giorgio-Maggiore-at-Dusk.webp
+/Users/almashiandrey/Downloads/Gallery App part3/assets/images/art_img/monet/Sunrise.jpg
+/Users/almashiandrey/Downloads/Gallery App part3/assets/images/art_img/monet/Woman-Parasol.webp
+/Users/almashiandrey/Downloads/Gallery App part3/assets/images/artist_img/evans_blue.jpeg
+/Users/almashiandrey/Downloads/Gallery App part3/assets/images/background_img/background.jpg
+/Users/almashiandrey/Downloads/Gallery App part3/assets/images/explore_img/burning-giraffe.jpg
+/Users/almashiandrey/Downloads/Gallery App part3/assets/images/explore_img/japanese-bridge.jpg
+/Users/almashiandrey/Downloads/Gallery App part3/assets/images/explore_img/mona-lisa.jpg
+/Users/almashiandrey/Downloads/Gallery App part3/assets/images/music_img/this_time.jpeg
+/Users/almashiandrey/Downloads/Gallery App part3/assets/images/painter_img/claude-monet.jpg
+/Users/almashiandrey/Downloads/Gallery App part3/assets/images/painter_img/leonardo-da-vinci.jpg
+/Users/almashiandrey/Downloads/Gallery App part3/assets/images/painter_img/salvador-dali.jpg
+/Users/almashiandrey/Downloads/Gallery App part3/lib/api/galeryBackend.dart
+/Users/almashiandrey/Downloads/Gallery App part3/lib/api/musicBackend.dart
+/Users/almashiandrey/Downloads/Gallery App part3/lib/main.dart
+/Users/almashiandrey/Downloads/Gallery App part3/lib/models/artistInfo.dart
+/Users/almashiandrey/Downloads/Gallery App part3/lib/models/explore_art.dart
+/Users/almashiandrey/Downloads/Gallery App part3/lib/models/gallery_info.dart
+/Users/almashiandrey/Downloads/Gallery App part3/lib/models/musicModel.dart
+/Users/almashiandrey/Downloads/Gallery App part3/lib/theme.dart
+/Users/almashiandrey/Downloads/Gallery App part3/lib/views/components/art_explore.dart
+/Users/almashiandrey/Downloads/Gallery App part3/lib/views/components/artist_view.dart
+/Users/almashiandrey/Downloads/Gallery App part3/lib/views/components/arts_view.dart
+/Users/almashiandrey/Downloads/Gallery App part3/lib/views/components/gallery_view.dart
+/Users/almashiandrey/Downloads/Gallery App part3/lib/views/explore.dart
+/Users/almashiandrey/Downloads/Gallery App part3/lib/views/home.dart
+/Users/almashiandrey/Downloads/Gallery App part3/lib/views/music.dart
+/Users/almashiandrey/Downloads/Gallery App part3/pubspec.yaml
 /opt/homebrew/Caskroom/flutter/3.19.5/flutter/bin/cache/artifacts/material_fonts/MaterialIcons-Regular.otf
 /opt/homebrew/Caskroom/flutter/3.19.5/flutter/bin/cache/pkg/sky_engine/LICENSE
 /opt/homebrew/Caskroom/flutter/3.19.5/flutter/bin/internal/engine.version
@@ -247,7 +223,6 @@
 /opt/homebrew/Caskroom/flutter/3.19.5/flutter/packages/flutter/lib/src/cupertino/theme.dart
 /opt/homebrew/Caskroom/flutter/3.19.5/flutter/packages/flutter/lib/src/cupertino/thumb_painter.dart
 /opt/homebrew/Caskroom/flutter/3.19.5/flutter/packages/flutter/lib/src/cupertino/toggleable.dart
-/opt/homebrew/Caskroom/flutter/3.19.5/flutter/packages/flutter/lib/src/dart_plugin_registrant.dart
 /opt/homebrew/Caskroom/flutter/3.19.5/flutter/packages/flutter/lib/src/foundation/_bitfield_io.dart
 /opt/homebrew/Caskroom/flutter/3.19.5/flutter/packages/flutter/lib/src/foundation/_capabilities_io.dart
 /opt/homebrew/Caskroom/flutter/3.19.5/flutter/packages/flutter/lib/src/foundation/_isolates_io.dart

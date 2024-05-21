@@ -1,8 +1,8 @@
 // This is a generated file; do not edit or check into version control.
 FLUTTER_ROOT=/opt/homebrew/Caskroom/flutter/3.19.5/flutter
-FLUTTER_APPLICATION_PATH=/Users/almashiandrey/Developer/Main/music-gallery
+FLUTTER_APPLICATION_PATH=/Users/almashiandrey/Downloads/Gallery App part3
 COCOAPODS_PARALLEL_CODE_SIGN=true
-FLUTTER_TARGET=/Users/almashiandrey/Developer/Main/music-gallery/lib/main.dart
+FLUTTER_TARGET=/Users/almashiandrey/Downloads/Gallery App part3/lib/main.dart
 FLUTTER_BUILD_DIR=build
 FLUTTER_BUILD_NAME=1.0.0
 FLUTTER_BUILD_NUMBER=1
@@ -10,4 +10,4 @@ DART_DEFINES=Zmx1dHRlci5pbnNwZWN0b3Iuc3RydWN0dXJlZEVycm9ycz10cnVl,RkxVVFRFUl9XRU
 DART_OBFUSCATION=false
 TRACK_WIDGET_CREATION=true
 TREE_SHAKE_ICONS=false
-PACKAGE_CONFIG=/Users/almashiandrey/Developer/Main/music-gallery/.dart_tool/package_config.json
+PACKAGE_CONFIG=/Users/almashiandrey/Downloads/Gallery App part3/.dart_tool/package_config.json

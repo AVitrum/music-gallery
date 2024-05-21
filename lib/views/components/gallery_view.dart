@@ -35,6 +35,7 @@ class _ArtistsListViewState extends State<ArtistsListView> {
                 child: ListView.builder(
                   itemCount: widget.artists.length,
                   itemBuilder: (context, index) {
+                    print(widget.artists[index]);
                     return GestureDetector(
                       onTap: () {
                         debugPrint(widget.artists[index].title);

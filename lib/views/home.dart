@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gallery_app/api/musicBackend.dart';
 import 'package:gallery_app/views/components/home_view.dart';
 import 'facts.dart';
 
@@ -33,6 +34,15 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         // The title text which will be shown on the action bar
         title: const Text(appTitle),
+        actions: [
+          IconButton(
+              onPressed: () {
+                MusicBackend().signOut();
+                Navigator.of(context)
+                    .pushNamedAndRemoveUntil('/', (route) => false);
+              },
+              icon: Icon(Icons.logout)),
+        ],
       ),
       body: pages[_selectItem],
       bottomNavigationBar: BottomNavigationBar(

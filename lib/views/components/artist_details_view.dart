@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gallery_app/api/musicBackend.dart';
 import 'package:gallery_app/models/artistInfo.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -47,18 +48,33 @@ class _ArtistDetailsViewState extends State<ArtistDetailsView> {
             ),
             Column(
               children: [
-                IconButton(
-                  onPressed: () {
-                    setState(() {
-                      isFavorite = !isFavorite;
-                    });
-                  },
-                  iconSize: 30,
-                  icon: Icon(
-                    isFavorite ? Icons.favorite : Icons.favorite_border,
-                    color: isFavorite ? Colors.red : null,
-                  ),
-                ),
+                StreamBuilder<List<String>>(
+                    stream: MusicBackend().favouriteArtists,
+                    builder: (context, snapshot) {
+                      if (!snapshot.hasData) {
+                        return SizedBox(
+                          width: 50,
+                          height: 50,
+                          child: Center(child: CircularProgressIndicator()),
+                        );
+                      }
+                      final favoritedPainters = snapshot.data;
+                      final isFavorited =
+                          favoritedPainters!.contains(widget.artist.title);
+                      return IconButton(
+                        onPressed: () {
+                          MusicBackend().setFavouritedArtist(
+                            title: widget.artist.title,
+                            favorited: !isFavorited,
+                          );
+                        },
+                        iconSize: 30,
+                        icon: Icon(isFavorited
+                            ? Icons.favorite
+                            : Icons.favorite_border),
+                        color: Colors.red,
+                      );
+                    }),
                 IconButton(
                   onPressed: () {
                     launch(widget.artist.link);
