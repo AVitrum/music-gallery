@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gallery_app/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:gallery_app/theme.dart';
-import 'package:gallery_app/views/components/login.dart';
+import 'package:gallery_app/views/login.dart';
 import 'package:gallery_app/views/register.dart';
 import 'package:gallery_app/views/signup_screen.dart';
 import 'package:gallery_app/views/splash_screen.dart';

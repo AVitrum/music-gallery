@@ -20,7 +20,6 @@ class MusicDetailsPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Center(
-            // додано Center для центрування по горизонталі
             child: Image.asset(
               music.img,
               fit: BoxFit.cover,
@@ -50,6 +49,23 @@ class MusicDetailsPage extends StatelessWidget {
                   music.year.toString(),
                   style: const TextStyle(fontSize: 16),
                 ),
+                StreamBuilder<int>(
+                  stream: MusicBackend().getLikesForMusic(music.title),
+                  builder: (context, snapshot) {
+                    if (snapshot.hasData) {
+                      final likes = snapshot.data!;
+                      return Text(
+                        'Likes: $likes',
+                        style: const TextStyle(fontSize: 16),
+                      );
+                    } else {
+                      return Text(
+                        'Likes: Loading...',
+                        style: const TextStyle(fontSize: 16),
+                      );
+                    }
+                  },
+                ),
               ],
             ),
           ),
@@ -73,32 +89,31 @@ class MusicDetailsPage extends StatelessWidget {
                   child: const Text('Listen'),
                 ),
                 StreamBuilder<List<String>>(
-                    stream: MusicBackend().favouriteMusics,
-                    builder: (context, snapshot) {
-                      if (!snapshot.hasData) {
-                        return SizedBox(
-                          width: 50,
-                          height: 50,
-                          child: Center(child: CircularProgressIndicator()),
-                        );
-                      }
-                      final favoritedMusics = snapshot.data;
-                      final isFavorited =
-                          favoritedMusics!.contains(music.title);
-                      return IconButton(
-                        onPressed: () {
-                          MusicBackend().setFavouritedMusic(
-                            title: music.title,
-                            favorited: !isFavorited,
-                          );
-                        },
-                        iconSize: 30,
-                        icon: Icon(isFavorited
-                            ? Icons.favorite
-                            : Icons.favorite_border),
-                        color: Colors.red,
+                  stream: MusicBackend().favouriteMusics,
+                  builder: (context, snapshot) {
+                    if (!snapshot.hasData) {
+                      return SizedBox(
+                        width: 50,
+                        height: 50,
+                        child: Center(child: CircularProgressIndicator()),
                       );
-                    }),
+                    }
+                    final favoritedMusics = snapshot.data;
+                    final isFavorited = favoritedMusics!.contains(music.title);
+                    return IconButton(
+                      onPressed: () {
+                        MusicBackend().setFavouritedMusic(
+                          title: music.title,
+                          favorited: !isFavorited,
+                        );
+                      },
+                      iconSize: 30,
+                      icon: Icon(
+                          isFavorited ? Icons.favorite : Icons.favorite_border),
+                      color: Color(0xff1fd00f),
+                    );
+                  },
+                ),
               ],
             ),
           ),

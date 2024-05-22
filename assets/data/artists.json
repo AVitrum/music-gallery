@@ -5,6 +5,8 @@
       "title": "Evans Blue",
       "img": "assets/images/artist_img/evans_blue.jpeg",
       "description": "A Canadian rock band",
+      "lat": 51.5343534,
+      "lng": -0.1084586,
       "link": "https://music.youtube.com/channel/UCAUzFgktAawSI_eNrHXdwDg?si=D25VxHpccg4FqZFQ",
       "musicList": [
         {
@@ -35,6 +37,8 @@
       "title": "Skillet",
       "img": "assets/images/artist_img/skillet.jpg",
       "description": "An American rock band",
+      "lat": 32.7565785,
+      "lng": -97.3426106,
       "link": "https://music.youtube.com/channel/UCAUzFgktAawSI_eNrHXdwDg?si=D25VxHpccg4FqZFQ",
       "musicList": [
         {

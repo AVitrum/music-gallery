@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gallery_app/api/musicBackend.dart';
 import 'package:gallery_app/models/artistInfo.dart';
+import 'package:gallery_app/views/components/location.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ArtistDetailsView extends StatefulWidget {
@@ -72,9 +73,19 @@ class _ArtistDetailsViewState extends State<ArtistDetailsView> {
                         icon: Icon(isFavorited
                             ? Icons.favorite
                             : Icons.favorite_border),
-                        color: Colors.red,
+                        color: Color(0xff1fd00f),
                       );
                     }),
+                IconButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return Location(artist: widget.artist);
+                    }));
+                  },
+                  iconSize: 30,
+                  icon: const Icon(Icons.place),
+                ),
                 IconButton(
                   onPressed: () {
                     launch(widget.artist.link);

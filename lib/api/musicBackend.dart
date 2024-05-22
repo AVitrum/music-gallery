@@ -21,9 +21,18 @@ class MusicBackend {
     await FirebaseAuth.instance.currentUser?.updateDisplayName(username);
   }
 
-  Future<void> login(String email, String password) async {
-    await FirebaseAuth.instance
-        .signInWithEmailAndPassword(email: email, password: password);
+  Future<bool> login(String email, String password) async {
+    try {
+      await FirebaseAuth.instance
+          .signInWithEmailAndPassword(email: email, password: password);
+      return true;
+    } on FirebaseAuthException catch (e) {
+      print('Something went wrong: ${e.message}');
+      return false;
+    } catch (e) {
+      print('Error: $e');
+      return false;
+    }
   }
 
   Stream<List<String>> get favouriteArtists {
@@ -84,6 +93,47 @@ class MusicBackend {
     } else {
       await music.delete();
     }
+
+    await setLikeToMusic(title: title, liked: favorited);
+  }
+
+  Future<void> setLikeToMusic(
+      {required String title, required bool liked}) async {
+    final db = FirebaseFirestore.instance;
+    final musicRef = db.collection('likes').doc(title);
+
+    await db.runTransaction((transaction) async {
+      final snapshot = await transaction.get(musicRef);
+
+      if (snapshot.exists) {
+        final data = snapshot.data()!;
+        final currentLikes = data['likes'] ?? 0;
+
+        if (liked) {
+          transaction.update(musicRef, {'likes': currentLikes + 1});
+        } else {
+          if (currentLikes > 0) {
+            transaction.update(musicRef, {'likes': currentLikes - 1});
+          }
+        }
+      } else {
+        transaction.set(musicRef, {'likes': 1});
+      }
+    });
+  }
+
+  Stream<int> getLikesForMusic(String title) {
+    final db = FirebaseFirestore.instance;
+    final musicRef = db.collection('likes').doc(title);
+
+    return musicRef.snapshots().map((snapshot) {
+      final data = snapshot.data();
+      if (data != null && data.containsKey('likes')) {
+        return data['likes'];
+      } else {
+        return 0;
+      }
+    });
   }
 
   Future<List<ArtistInfo>> getArtists() async {

@@ -46,7 +46,7 @@ class _HomeState extends State<Home> {
       ),
       body: pages[_selectItem],
       bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: Theme.of(context).textSelectionTheme.selectionColor,
+        selectedItemColor: Color(0xff1fd00f),
         currentIndex: _selectItem,
         onTap: _onItemTab,
         items: const [

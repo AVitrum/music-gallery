@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:gallery_app/api/musicBackend.dart';
 
-class RegisterPage extends StatefulWidget {
-  const RegisterPage({Key? key}) : super(key: key);
+class LoginPage extends StatefulWidget {
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
-  _RegisterPageState createState() => _RegisterPageState();
+  _LoginPageState createState() => _LoginPageState();
 }
 
-class _RegisterPageState extends State<RegisterPage> {
-  final _usernameController = TextEditingController();
+class _LoginPageState extends State<LoginPage> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
 
@@ -26,8 +25,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 const SizedBox(height: 40.0),
                 Column(
                   children: <Widget>[
-                    Icon(Icons.account_circle,
-                        size: 80, color: Color(0xff1fd00f)),
+                    Icon(Icons.music_note, size: 80, color: Color(0xff1fd00f)),
                     const SizedBox(height: 16.0),
                     const Text(
                       'Music Gallery App',
@@ -40,15 +38,6 @@ class _RegisterPageState extends State<RegisterPage> {
                   ],
                 ),
                 const SizedBox(height: 60.0),
-                TextField(
-                  controller: _usernameController,
-                  decoration: const InputDecoration(
-                    filled: true,
-                    labelText: 'Username',
-                    border: OutlineInputBorder(),
-                  ),
-                ),
-                const SizedBox(height: 12.0),
                 TextField(
                   controller: _emailController,
                   decoration: const InputDecoration(
@@ -72,25 +61,30 @@ class _RegisterPageState extends State<RegisterPage> {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: <Widget>[
                     ElevatedButton(
-                      child: const Text('REGISTER'),
-                      onPressed: () {
-                        MusicBackend().register(
-                          _usernameController.text,
-                          _emailController.text,
-                          _passwordController.text,
-                        );
-                        Navigator.of(context)
-                            .pushNamedAndRemoveUntil('/main', (route) => false);
+                      child: const Text('NEXT'),
+                      onPressed: () async {
+                        bool success = await MusicBackend().login(
+                            _emailController.text, _passwordController.text);
+                        if (success) {
+                          Navigator.of(context).pushNamedAndRemoveUntil(
+                              '/main', (route) => false);
+                        } else {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            const SnackBar(
+                              content: Text(
+                                  'Login failed. Please check your credentials.'),
+                            ),
+                          );
+                        }
                       },
                     ),
                     TextButton(
-                      child: const Text('BACK'),
+                      child: const Text(
+                        'CANCEL',
+                      ),
                       onPressed: () {
-                        _usernameController.clear();
                         _emailController.clear();
                         _passwordController.clear();
-                        Navigator.of(context).pushNamedAndRemoveUntil(
-                            '/login', (route) => false);
                       },
                     ),
                   ],
@@ -103,16 +97,38 @@ class _RegisterPageState extends State<RegisterPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         const Text(
-                          "Already have an account? ",
+                          "Don't have an account? ",
                           style: TextStyle(color: Colors.grey),
                         ),
                         TextButton(
                           onPressed: () {
-                            Navigator.of(context).pushNamed('/login');
+                            Navigator.of(context).pushNamed('/register');
                           },
                           child: const Text(
-                            'Login',
-                            style: TextStyle(color: Color(0xff1fd00f)),
+                            'Register',
+                            style: TextStyle(
+                              color: Color(0xff1fd00f),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Text(
+                          "You can come in as a guest ",
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            Navigator.of(context).pushNamed('/signup');
+                          },
+                          child: const Text(
+                            'Guest',
+                            style: TextStyle(
+                              color: Color(0xff1fd00f),
+                            ),
                           ),
                         ),
                       ],
